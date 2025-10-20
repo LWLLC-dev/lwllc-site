@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LWLLC | Roadside & Environmental Cleanup Services</title>
+  <meta name="description" content="LWLLC provides professional roadside cleanup and environmental maintenance services for communities and local projects including Mirage and Mirage Lake." />
+  <style>
+    :root {
+      --bg: #f9fafb;
+      --text: #1f2937;
+      --accent: #0a7a2f;
+      --card: #ffffff;
+    }
+    [data-theme="dark"] {
+      --bg: #111827;
+      --text: #f9fafb;
+      --accent: #34d399;
+      --card: #1f2937;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", sans-serif;
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--accent);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+    nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 1rem;
+      background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+        url('https://images.unsplash.com/photo-1605826832919-07cf17eade1b?auto=format&fit=crop&w=1400&q=60') center/cover;
+      color: white;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .services, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    }
+    img {
+      max-width: 100%;
+    }
+    a.button {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 0.6rem 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 0.8rem;
+      transition: background 0.2s ease;
+    }
+    a.button:hover {
+      background: #086023;
+    }
+    form {
+      display: grid;
+      gap: 1rem;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    input, textarea {
+      padding: 0.75rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    button {
+      background: var(--accent);
+      color: white;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      background: var(--card);
+      color: var(--text);
+    }
+    .toggle-theme {
+      cursor: pointer;
+      border: 2px solid white;
+      padding: 0.3rem 0.7rem;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      background: transparent;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>LWLLC</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button class="toggle-theme" onclick="toggleTheme()"☀️</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Keeping Our Roads and Communities Clean</h2>
+    <p>LWLLC provides professional roadside cleanup and environmental maintenance services for communities and private partners.</p>
+  </section>
+
+  <section id="about">
+    <h3>About Us</h3>
+    <p style="text-align:center;">At LWLLC, we’re committed to creating cleaner, safer, and greener environments. Our dedicated teams remove litter, debris, and waste from highways, lakesides, and community areas — helping protect nature and the people who enjoy it.</p>
+  </section>
+
+  <section id="services">
+    <h3>Our Services</h3>
+    <div class="services">
+      <div class="card">
+        <h4>Roadside Trash Pickup</h4>
+        <p>Efficient removal of debris and litter from highways, medians, and public roadsides.</p>
+      </div>
+      <div class="card">
+        <h4>Environmental Maintenance</h4>
+        <p>Ongoing cleanup and beautification for natural sites and public recreation areas.</p>
+      </div>
+      <div class="card">
+        <h4>Community Cleanup Events</h4>
+        <p>We partner with local volunteers and sponsors to host community cleanup drives.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h3>Our Projects</h3>
+    <div class="projects">
+      <div class="card">
+        <img src="mirage-logo.png" alt="Mirage Project Logo" style="width:120px;margin-bottom:1rem;">
+        <h4>Mirage Project</h4>
+        <p>
+          Focused on keeping desert highways clean and sustainable, the <strong>Mirage Project</strong> restores and maintains arid landscapes through safe cleanup and recycling efforts.
+        </p>
+        <a href="mirage.html" class="button">View Project</a>
+      </div>
+      <div class="card">
+        <img src="https://iili.io/K8QpEoG.md.jpg" alt="Mirage Lake Logo" style="width:120px;margin-bottom:1rem;border-radius:10px;">
+        <h4>Mirage Lake</h4>
+        <p>
+          The <strong>Mirage Lake</strong> Community Hub brings together residents and volunteers to preserve the lake’s beauty, ensure safe recreation, and promote local conservation.
+        </p>
+        <a href="mirage-lake.html" class="button">Visit Site</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h3>Contact Us</h3>
+    <form action="mailto:info@lwllc.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="How can we help?" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> LWLLC — Keeping Our Roads Clean | <a href="mirage-lake.html" style="color:var(--accent);text-decoration:none;">Mirage Lake Hub</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function toggleTheme() {
+      const html = document.documentElement;
+      const dark = html.getAttribute("data-theme") === "dark";
+      html.setAttribute("data-theme", dark ? "light" : "dark");
+      document.querySelector(".toggle-theme").textContent = dark ? "☀️" : "🌙";
+    }
+  </script>
+</body>
+</html>
